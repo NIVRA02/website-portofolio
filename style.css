@@ -260,7 +260,7 @@ section {
 
 .projects-box {
     display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 0.2fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0.1fr));
     place-items: center;
     gap: 2.5rem; 
 }
@@ -302,4 +302,13 @@ section {
 .projects-card p {
     color: var(--text-color);
     font-size: 1.6rem; 
+}
+.footer {
+background-color: var(--second-bg-color);
+padding: 50px 0;
+}
+.footer .cp {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
 }
