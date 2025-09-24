@@ -303,12 +303,87 @@ section {
     color: var(--text-color);
     font-size: 1.6rem; 
 }
+/* Footer Styles */
 .footer {
-background-color: var(--second-bg-color);
-padding: 50px 0;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 40px 15%;
 }
-.footer .cp {
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h1, .footer-section h2 {
+    color: var(--main-color);
+}
+
+.footer-section .logo-text {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.footer-section .logo-text span {
+    background: linear-gradient(270deg, #4169e1, #FF00FF);
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-section p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
+.footer-section .socials a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 1rem 0.5rem 0 0;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-section .socials a:hover {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    transform: scale(1.1);
+}
+
+.footer-section.links ul {
+    list-style: none;
+}
+
+.footer-section.links ul a {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    transition: 0.3s ease-in-out;
+}
+
+.footer-section.links ul a:hover {
+    color: var(--main-color);
+    padding-left: 10px;
+}
+
+.footer-bottom {
     text-align: center;
-    margin-top: 40px;
-    font-size: 16px;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    font-size: 1.4rem;
 }
