@@ -75,8 +75,41 @@ span {
 .navbar a:hover {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
-}.navbar a.active {
-    display: block;
+}
+
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block; 
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%; 
+        width: 100%;
+        padding: 1rem 4%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        transition: left 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 2rem;
+    }
 }
 .gradient-btn {
     font-size: 1.8rem;
@@ -388,4 +421,36 @@ section {
     border-top: 1px solid #333;
     margin-top: 20px;
     font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block; 
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%; 
+        width: 100%;
+        padding: 1rem 4%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(10px);
+        transition: left 0.3s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar.active {
+        left: 0; 
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        font-size: 2rem;
+    }
+
+    .gradient-btn {
+        display: none;
+    }
 }
